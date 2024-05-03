@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення запису</title>
+</head>
+<body>
+<h2>Створення запису</h2>
+<form action="create_post.php" method="post">
+    <input type="hidden" name="user_id" value="<?php echo $user_id; ?>"> <!-- Передайте user_id у якості прихованого поля -->
+    <label for="title">Заголовок:</label><br>
+    <input type="text" id="title" name="title" required><br>
+    <label for="content">Текст:</label><br>
+    <textarea id="content" name="content" rows="4" required></textarea><br>
+    <input type="submit" value="Створити запис">
+</form>
+<br>
+<button onclick="window.location.href='blog.php'">Перейти до блогу</button>
+</body>
+</html>

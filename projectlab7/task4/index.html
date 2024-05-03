@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація користувача</title>
+</head>
+<body>
+<h2>Реєстрація нового користувача</h2>
+<form action="process_registration.php" method="post">
+    <label for="name">Ім'я:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Електронна пошта:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Пароль:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" value="Зареєструватися">
+</form>
+</body>
+</html>
